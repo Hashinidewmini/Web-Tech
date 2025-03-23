@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../Header/Header'
 import image1 from '../../../public/Images/1.jpg'
 import image2 from '../../../public/Images/2.jpg'
+import image3 from '../../../public/Images/3.jpg'
+import image4 from '../../../public/Images/4.jpg'
 import './Homepage.css'
 
 export default function Homepage() {
@@ -10,7 +12,7 @@ export default function Homepage() {
       {/* header section */}
       <Header />
 
-      {/* Coffee for Union section */}
+      {/* Coffee for Celebrate section */}
       <div className='content' style={{
         position: 'absolute',
         top: '30%',
@@ -27,8 +29,8 @@ export default function Homepage() {
           marginTop: '7%'
         }}>
 
-          <h1>Coffee for Union</h1>
-          <p>Book Now</p>
+          <h1>Coffee for Celebrate</h1>
+          <p>Book Your Table</p>
         </div>
       </div >
 
@@ -65,7 +67,53 @@ export default function Homepage() {
         padding: '2% 0 2% 0'
       }}>
 
+        <img src={image3} alt="" style={{ float: 'left', marginLeft: '2%' }} />
+        <div style={{
+          float: 'left', color: 'black',
+          marginLeft: '20%',
+          marginTop: '7%'
+        }}>
+          <h1>Coffee for Freedom</h1>
+          <p>Learn More</p>
+        </div>
       </div>
+
+      {/* Coffee for Everyone section */}
+      <div className='content' style={{
+        position: 'absolute',
+        top: '240%',
+        left: 0,
+        right: 0,
+        backgroundColor: '#7B4B3A',
+        padding: '2% 0 2% 0'
+      }}>
+
+        <img src={image4} alt='' style={{ float: 'right', marginRight: '2%' }} />
+        <div style={{
+          float: 'right',
+          color: 'white',
+          marginRight: '20%',
+          marginTop: '7%'
+        }}>
+          <h1>Coffee for Everyone</h1>
+          <p>Place your Order</p>
+        </div>
+      </div>
+
+      {/* footer section */}
+      <footer>
+        <center>
+
+          <h3>Follow Us</h3>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+          <a href="">Pintrest</a> <br />
+
+          
+
+          <p>© 2025 Buvons. All Rights Reserved</p>
+        </center>
+      </footer>
     </>
   )
 }
