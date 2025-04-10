@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
     res.send("Hello World");
 })
 
+app.get('/message', (req, res) => {
+    res.send("hi");
+})
+
 app.listen(5000, () =>{
     console.log(`Server is running...`);
 })
