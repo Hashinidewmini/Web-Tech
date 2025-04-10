@@ -18,7 +18,7 @@ export default function Homepage() {
         padding: '2% 0 2% 0'
       }}>
 
-        <img src='../../images/1.jpg' alt="" style={{ float: 'left' }} />
+        <img src='./images/1.jpg' alt="" style={{ float: 'left' }} />
         <div style={{
           float: 'right', color: 'white',
           marginRight: '20%',
@@ -41,7 +41,7 @@ export default function Homepage() {
         padding: '2% 0 2% 0'
       }}>
 
-        <img src='../../images/2.jpg' alt="" style={{ float: 'right', marginRight: '2%' }} />
+        <img src='./images/2.jpg' alt="" style={{ float: 'right', marginRight: '2%' }} />
         <div style={{
           float: 'left', color: 'black',
           marginLeft: '20%',
@@ -63,7 +63,7 @@ export default function Homepage() {
         padding: '2% 0 2% 0'
       }}>
 
-        <img src='../../images/3.jpg' alt="" style={{ float: 'left', marginLeft: '2%' }} />
+        <img src='./images/3.jpg' alt="" style={{ float: 'left', marginLeft: '2%' }} />
         <div style={{
           float: 'left', color: 'black',
           marginLeft: '20%',
@@ -84,7 +84,7 @@ export default function Homepage() {
         padding: '2% 0 2% 0'
       }}>
 
-        <img src='../../images/4.jpg' alt='' style={{ float: 'right', marginRight: '2%' }} />
+        <img src='./images/4.jpg' alt='' style={{ float: 'right', marginRight: '2%' }} />
         <div style={{
           float: 'right',
           color: 'white',
