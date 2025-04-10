@@ -1,9 +1,5 @@
 import React from 'react'
 import Header from '../Header/Header'
-import image1 from '../../../public/Images/1.jpg'
-import image2 from '../../../public/Images/2.jpg'
-import image3 from '../../../public/Images/3.jpg'
-import image4 from '../../../public/Images/4.jpg'
 import './Homepage.css'
 
 export default function Homepage() {
@@ -22,7 +18,7 @@ export default function Homepage() {
         padding: '2% 0 2% 0'
       }}>
 
-        <img src={image1} alt="" style={{ float: 'left' }} />
+        <img src='../../images/1.jpg' alt="" style={{ float: 'left' }} />
         <div style={{
           float: 'right', color: 'white',
           marginRight: '20%',
@@ -45,7 +41,7 @@ export default function Homepage() {
         padding: '2% 0 2% 0'
       }}>
 
-        <img src={image2} alt="" style={{ float: 'right', marginRight: '2%' }} />
+        <img src='../../images/2.jpg' alt="" style={{ float: 'right', marginRight: '2%' }} />
         <div style={{
           float: 'left', color: 'black',
           marginLeft: '20%',
@@ -67,7 +63,7 @@ export default function Homepage() {
         padding: '2% 0 2% 0'
       }}>
 
-        <img src={image3} alt="" style={{ float: 'left', marginLeft: '2%' }} />
+        <img src='../../images/3.jpg' alt="" style={{ float: 'left', marginLeft: '2%' }} />
         <div style={{
           float: 'left', color: 'black',
           marginLeft: '20%',
@@ -88,7 +84,7 @@ export default function Homepage() {
         padding: '2% 0 2% 0'
       }}>
 
-        <img src={image4} alt='' style={{ float: 'right', marginRight: '2%' }} />
+        <img src='../../images/4.jpg' alt='' style={{ float: 'right', marginRight: '2%' }} />
         <div style={{
           float: 'right',
           color: 'white',
