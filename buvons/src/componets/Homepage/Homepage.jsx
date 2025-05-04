@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../Header/Header'
 import './Homepage.css'
+import { Link } from 'react-router-dom'
+
 
 export default function Homepage() {
   return (
@@ -26,7 +28,7 @@ export default function Homepage() {
         }}>
 
           <h1>Coffee for Celebrate</h1>
-          <p>Book Your Table</p>
+          <p><Link to="/tablebooking" className='link' style={{ color: 'white' }}>Book Your Table</Link></p>
         </div>
       </div >
 
@@ -49,7 +51,7 @@ export default function Homepage() {
         }}>
 
           <h1>Coffee for Happiness</h1>
-          <p>Learn More</p>
+          <p><Link to="/careers" className='link' style={{ color: 'black' }}>Learn More</Link></p>
         </div>
       </div >
 
@@ -70,7 +72,7 @@ export default function Homepage() {
           marginTop: '7%'
         }}>
           <h1>Coffee for Freedom</h1>
-          <p>Learn More</p>
+          <p><Link to="/facilities" className='link' style={{ color: 'black' }}>Learn More</Link></p>
         </div>
       </div>
 
@@ -92,7 +94,7 @@ export default function Homepage() {
           marginTop: '7%'
         }}>
           <h1>Coffee for Everyone</h1>
-          <p>Place your Order</p>
+          <p><Link to="/order-coffee" className='link' style={{ color: 'white' }}>Place your Order</Link></p>
         </div>
       </div>
 
@@ -104,8 +106,9 @@ export default function Homepage() {
           <a href="">Facebook</a>
           <a href="">Instagram</a>
           <a href="">Pintrest</a> <br />
-
           
+          <a href='tel:123456789'></a>
+          <a href='mailto:info@buvons.lk'></a>
 
           <p>© 2025 Buvons. All Rights Reserved</p>
         </center>
