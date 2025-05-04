@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd claude-code && npm start",
+    "client": "cd client && npm start"
   },
   "repository": {
     "type": "git",
@@ -13,9 +16,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/SystemeStrasse/Web-Tech/issues"
   },
-  "homepage": "https://github.com/SystemeStrasse/Web-Tech#readme"
+  "homepage": "https://github.com/SystemeStrasse/Web-Tech#readme",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
 }
