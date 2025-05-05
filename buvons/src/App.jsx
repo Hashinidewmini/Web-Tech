@@ -5,6 +5,8 @@ import Menu from './componets/Menu/Menu'
 import Shop from './componets/Shop/Shop'
 import TableBook from './componets/TableBook/TableBook'
 import About from './componets/AboutUs/About'
+import Facilities from './componets/Facilities/Facilities'
+import Orders from './componets/Orders/Orders'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +20,8 @@ function App() {
           <Route path="/shops" element={<Shop />} />
           <Route path="/tablebooking" element={<TableBook />} />
           <Route path="/about-us" element={<About />} />
+          <Route path="/facilities" element={<Facilities />} />
+          <Route path='/products' element={<Orders />} />
         </Routes>
       </Router>
     </>

@@ -94,7 +94,7 @@ export default function Homepage() {
           marginTop: '7%'
         }}>
           <h1>Coffee for Everyone</h1>
-          <p><Link to="/order-coffee" className='link' style={{ color: 'white' }}>Place your Order</Link></p>
+          <p><Link to="/products" className='link' style={{ color: 'white' }}>Place your Order</Link></p>
         </div>
       </div>
 
