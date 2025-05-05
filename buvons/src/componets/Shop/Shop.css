@@ -4,3 +4,18 @@
     left: 0;
     right: 0;
 }
+fieldset{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    right: 10%;
+}
+.shops-table{
+    border-collapse: collapse;
+    width: 80%;
+    height: auto;
+}
+
+.shops-table td{
+    padding: 2% 10% 2% 10%;
+}

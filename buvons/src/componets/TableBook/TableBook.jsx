@@ -1,46 +1,57 @@
 import React from 'react'
+import './Table.css'
 
+// function resetMessage() {
+//   alert("Cleared");
+// }
 export default function TableBook() {
   return (
     <>
+      
+      <center><h1>Table Booking</h1></center>
       <fieldset>
         <center>
           <form>
-            <table>
+            <table className='table'>
 
               <tr>
-                <td>Customer Name: </td>
-                <td><input type="text" name="customerName" /></td>
+                <td><center>Customer Name: </center></td>
+                <td><center><input type="text" name="customerName" /></center></td>
               </tr>
 
               <tr>
-                <td>Customer Tel: </td>
-                <td><input type="text" name="customerTel" /></td>
+                <td><center>Customer Tel: </center></td>
+                <td><center><input type="text" name="customerTel" /></center></td>
               </tr>
 
               <tr>
-                <td>Email: </td>
-                <td><input type="text" name="email" /></td>
+                <td><center>Email: </center></td>
+                <td><center><input type="text" name="email" /></center></td>
               </tr>
 
               <tr>
-                <td>Table Number: </td>
-                <td><input type="text" name="totalPrice" /></td>
+                <td><center>Table Number: </center></td>
+                <td><center><input type="text" name="totalPrice" /></center></td>
               </tr>
 
               <tr>
-                <td>Table Capacity: </td>
-                <td><input type="text" name="tableCapacity" /></td>
+                <td><center>Table Capacity: </center></td>
+                <td><center><input type="text" name="tableCapacity" /></center></td>
               </tr>
 
               <tr>
-                <td>Date: </td>
-                <td><input type="date" name="date" /></td>
+                <td><center>Booking Date: </center></td>
+                <td><center><input type="date" name="date" /></center></td>
               </tr>
 
               <tr>
-                <td>Time: </td>
-                <td><input type="time" name="time" /></td>
+                <td><center>Booking Time: </center></td>
+                <td><center><input type="time" name="time" /></center></td>
+              </tr>
+
+              <tr>
+                <td><center><button type='submit'>Submit</button></center></td>
+                <td><center><button type='reset' onClick={resetMessage()}>Clear</button></center></td>
               </tr>
 
             </table>

@@ -51,7 +51,7 @@ export default function Homepage() {
         }}>
 
           <h1>Coffee for Happiness</h1>
-          <p><Link to="/careers" className='link' style={{ color: 'black' }}>Learn More</Link></p>
+          <p><Link to="/about-us" className='link' style={{ color: 'black' }}>About Us</Link></p>
         </div>
       </div >
 
