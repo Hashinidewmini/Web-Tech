@@ -9,7 +9,6 @@ export default function Homepage() {
     <>
       {/* header section */}
       <Header />
-
       {/* Coffee for Celebrate section */}
       <div className='content' style={{
         position: 'absolute',
@@ -94,7 +93,7 @@ export default function Homepage() {
           marginTop: '7%'
         }}>
           <h1>Coffee for Everyone</h1>
-          <p><Link to="/products" className='link' style={{ color: 'white' }}>Place your Order</Link></p>
+          <p><Link to="/orders" className='link' style={{ color: 'white' }}>Place your Order</Link></p>
         </div>
       </div>
 

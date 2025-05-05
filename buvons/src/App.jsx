@@ -21,7 +21,7 @@ function App() {
           <Route path="/tablebooking" element={<TableBook />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/facilities" element={<Facilities />} />
-          <Route path='/products' element={<Orders />} />
+          <Route path='/orders' element={<Orders />} />
         </Routes>
       </Router>
     </>
