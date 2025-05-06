@@ -6,7 +6,7 @@
     list-style-type: none;
 }
 
-.products-container {
+.products-container, .customer{
     padding: 1rem;
     font-family: Arial, sans-serif;
   }
