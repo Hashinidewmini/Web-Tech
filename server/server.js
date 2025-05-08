@@ -3,7 +3,10 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import ordersRoutes from './routes/orders.routes.js';
+
+//import routes.
+import ordersRoutes from './routes/orders.routes.js'; // import orders routes
+import userRoutes from './routes/user.routes.js'; // import user routes
 
 dotenv.config();
 
@@ -20,6 +23,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 // Use routes
 app.use('/api', ordersRoutes); // All routes in orders.routes.js will be prefixed with /api
+app.use('/api', userRoutes); // All routes in user.routes.js will be prefixed with /api
 
 const PORT = process.env.PORT || 5000;
 

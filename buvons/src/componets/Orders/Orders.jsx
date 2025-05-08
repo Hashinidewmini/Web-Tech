@@ -146,11 +146,7 @@ export default function Orders() {
                         <button onClick={handleSubmitOrder} className="submit-order">
                             Submit Order
                         </button>
-                        <br />
-                        <br />
-                        <button type='reset'>
-                            Cancle Order
-                        </button>
+                        
                     </center>
                 </div>
             </div>
