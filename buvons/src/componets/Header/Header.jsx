@@ -9,7 +9,7 @@ export default function Header() {
       <nav className='navbar'>
         <h4 className='links'><Link className='link' to="/menu">Menu</Link></h4>
         <h4 className='links'><Link className='link' to="/shops">Find a Shop</Link></h4>
-        <h4 className='links'><Link className='link' to="/gift">Gift Card</Link></h4>
+        <h4 className='links'><Link className='link' to="/login">Login</Link></h4>
       </nav>
     </div>
   )

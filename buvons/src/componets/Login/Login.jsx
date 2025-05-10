@@ -1,4 +1,5 @@
 import React from 'react'
+import './Login.css'
 
 export default function Login() {
     return (
@@ -36,6 +37,13 @@ export default function Login() {
                             <td rowSpan={2}>
                                 <center>
                                     <button type="submit">Login</button>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colSpan={2}>
+                                <center>
+                                    <a href="/add-account">Don't have an account? Register here</a>
                                 </center>
                             </td>
                         </tr>
