@@ -27,18 +27,18 @@ export default function Orders() {
         address: ''
     });
 
-    const addToCart = (product, size) => {
+    const addCart = (product, size) => {
         const price = size === 'small' ? product.small : product.large;
         setCart([...cart, { id: product.id, name: product.name, size, price }]);
     };
 
-    const removeFromCart = (index) => {
+    const removeCart = (index) => {
         const updatedCart = [...cart];
         updatedCart.splice(index, 1);
         setCart(updatedCart);
     };
 
-    const getTotal = () => {
+    const totalP = () => {
         return cart.reduce((total, product) => total + product.price, 0);
     };
 
@@ -56,7 +56,7 @@ export default function Orders() {
                 email: customer.email,
             },
             cart,
-            totalPrice: getTotal(),
+            totalPrice: totalP(),
             date: new Date().toISOString(),
         };
     
@@ -123,9 +123,9 @@ export default function Orders() {
                                 <div key={product.id} className="product-card">
                                     <h2>{product.name}</h2>
                                     <p>Small: ${product.small.toFixed(2)}</p>
-                                    <button onClick={() => addToCart(product, 'small')}>Add Small</button>
+                                    <button onClick={() => addCart(product, 'small')}>Add Small</button>
                                     <p>Large: ${product.large.toFixed(2)}</p>
-                                    <button onClick={() => addToCart(product, 'large')}>Add Large</button>
+                                    <button onClick={() => addCart(product, 'large')}>Add Large</button>
                                 </div>
                             ))}
                         </div>
@@ -135,12 +135,12 @@ export default function Orders() {
                             {cart.map((item, index) => (
                                 <li key={index}>
                                     {item.name} ({item.size}) - ${item.price.toFixed(2)}
-                                    <button onClick={() => removeFromCart(index)}>Remove</button>
+                                    <button onClick={() => removeCart(index)}>Remove</button>
                                 </li>
                             ))}
                         </ul>
 
-                        <h3>Total: ${getTotal().toFixed(2)}</h3>
+                        <h3>Total: ${totalP().toFixed(2)}</h3>
                     </div>
                     <center>
                         <button onClick={handleSubmitOrder} className="submit-order">
